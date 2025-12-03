@@ -42,4 +42,4 @@ CR7 Mini Quiz is a fast and fun quiz about Cristiano Ronaldo featuring:
 Clone the project:
 
 ```bash
-git clone https://github.com/your-username/cr7-mini-quiz
+git clone https://github.com/jayjamesnoivo/CR7-mini-quiz.git
