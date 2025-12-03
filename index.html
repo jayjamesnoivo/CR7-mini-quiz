@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CR7 Mini Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- SIUUUU ANIMATION -->
+    <div id="siu-text">SIUUUU!</div>
+
+    <div class="card shine">
+
+        <!-- MENU -->
+        <div id="menu-box">
+            <h1 class="title">
+                <span class="dot"></span> CR7 Mini Quiz
+            </h1>
+
+            <p class="subtitle">Select your difficulty level:</p>
+
+            <button onclick="startQuiz('easy')" class="menu-btn">Easy</button>
+            <button onclick="startQuiz('medium')" class="menu-btn">Medium</button>
+            <button onclick="startQuiz('hard')" class="menu-btn">Hard</button>
+        </div>
+
+        <!-- QUIZ -->
+        <div id="quiz-box" class="hidden">
+            <h2 id="question"></h2>
+
+            <p id="feedback" class="feedback"></p>
+
+            <div id="answers"></div>
+
+            <button id="next-btn" class="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- RESULTS -->
+        <div id="result-box" class="hidden">
+            <h2 class="title">
+                <span class="dot"></span> Results
+            </h2>
+
+            <p id="score"></p>
+
+            <button onclick="goHome()" class="menu-btn">Back to Menu</button>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

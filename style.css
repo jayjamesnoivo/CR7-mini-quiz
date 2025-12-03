@@ -1,0 +1,246 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* GLOBAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #0a0a0a;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* CARBON FIBER BACKGROUND (CSS ONLY) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(45deg, rgba(255,255,255,0.03) 25%, rgba(0,0,0,0.03) 25%) -50px 0,
+        linear-gradient(45deg, rgba(0,0,0,0.03) 25%, rgba(255,255,255,0.03) 25%) 0px 0,
+        linear-gradient(45deg, rgba(255,255,255,0.03) 25%, rgba(0,0,0,0.03) 25%) -50px -50px,
+        linear-gradient(45deg, rgba(0,0,0,0.03) 25%, rgba(255,255,255,0.03) 25%) 0px -50px;
+    background-size: 100px 100px;
+
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+/* MAIN CARD */
+.card {
+    width: 440px;
+    padding: 40px 35px;
+
+    background: rgba(0,0,0,0.70);
+    backdrop-filter: blur(14px);
+
+    border-radius: 22px;
+
+    border: 4px solid #d4a017;
+    box-shadow:
+        0 0 20px rgba(255, 204, 0, 0.5),
+        inset 0 0 20px rgba(255, 204, 0, 0.25);
+}
+
+/* GOLD SHINE EFFECT ON CARD */
+.shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255, 230, 120, 0.45) 50%,
+        transparent 100%
+    );
+
+    transform: skewX(-25deg);
+    animation: shineMove 4s infinite ease-in-out;
+}
+
+@keyframes shineMove {
+    0% { left: -150%; }
+    60% { left: 150%; }
+    100% { left: 150%; }
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffd447;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255,215,0,0.6);
+}
+
+.dot {
+    background: #ffd447;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.8);
+}
+
+/* SUBTITLE */
+.subtitle {
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* MENU BUTTONS */
+.menu-btn {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    background: #1a1a1a;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.menu-btn:hover {
+    background: #ffd447;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(255,215,0,0.7);
+}
+
+/* QUIZ */
+#question {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.feedback {
+    text-align: center;
+    min-height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* ANSWER CHOICES */
+#answers button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+
+    border-radius: 10px;
+    border: 1px solid rgba(255,215,0,0.2);
+
+    background: rgba(255,255,255,0.07);
+    color: white;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#answers button:hover {
+    background: rgba(255,215,0,0.25);
+}
+
+.correct {
+    background: #4CAF50 !important;
+    color: white;
+}
+
+.wrong {
+    background: #D32F2F !important;
+    color: white;
+}
+
+/* NEXT BUTTON */
+.next-btn {
+    width: 100%;
+    padding: 14px;
+
+    margin-top: 12px;
+    border-radius: 12px;
+    border: none;
+
+    background: linear-gradient(135deg, #ffd447, #ff9900);
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.next-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255,200,0,0.8);
+}
+
+/* SIUUUU ANIMATION */
+#siu-text {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+
+    font-size: 90px;
+    font-weight: 900;
+    color: #ffd447;
+    text-shadow: 0 0 25px rgba(255,215,0,1);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.3s ease-out;
+}
+
+/* RESULTS */
+#score {
+    color: #ffd447;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.hidden { display: none; }
+
+/* RESPONSIVE */
+@media(max-width: 480px) {
+    .card {
+        width: 92%;
+        padding: 30px 20px;
+    }
+
+    #siu-text {
+        font-size: 60px;
+    }
+}
