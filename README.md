@@ -1,27 +1,45 @@
-CR7 Mini Quiz 🐐
+# ⚽ CR7 Mini Quiz 🐐
 
-CR7 Mini Quiz is a fun and interactive web quiz dedicated to Cristiano Ronaldo.
-It features a modern UI inspired by premium EA Sports FC card designs.
+An interactive and stylish Cristiano Ronaldo quiz inspired by EA Sports FC UI.
 
-🎮 Features
+---
 
-• 3 difficulty levels (Easy, Medium, Hard)
-• Premium glowing UI with gold effects
-• Special celebration messages for correct answers (ex: Good answer! SIUUUU!)
-• Custom messages for wrong answers
-• Final score display (ex: 4/5 correct)
-• Fully responsive and smooth animations
+## 🐐 About
 
-🚀 Technologies Used
+CR7 Mini Quiz is a fast and fun quiz about Cristiano Ronaldo featuring:
 
-• HTML
-• CSS (glow effects, smooth transitions, animations)
-• JavaScript
+- 3 difficulty levels (Easy, Medium, Hard)
+- Gold “Special Card” design (EA Sports FC style)
+- Carbon fiber animated background
+- Correct / Wrong visual feedback
+- Animated “SIUUUU!” effect on correct answers
+- Responsive design (mobile-friendly)
+- Final score display
 
-📦 Installation
+---
 
-Download or clone the repository
+## 🚀 Features
 
-Open index.html in your browser
+- ⚡ Smooth transitions & animations  
+- 🎯 Random feedback messages  
+- 💛 Golden border with shine effect  
+- 🔥 SIUUUU visual animation  
+- 📱 Fully responsive layout  
 
-Enjoy the quiz!
+---
+
+## 🛠️ Technologies
+
+- HTML  
+- CSS (Glassmorphism, animations, glow, shine)  
+- JavaScript (logic & interactions)  
+- GitHub Pages (hosting)
+
+---
+
+## 📥 Installation
+
+Clone the project:
+
+```bash
+git clone https://github.com/your-username/cr7-mini-quiz
