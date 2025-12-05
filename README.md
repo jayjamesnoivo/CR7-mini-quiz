@@ -1,12 +1,12 @@
 # ⚽ CR7 Mini Quiz 🐐
 
-An interactive and stylish Cristiano Ronaldo quiz inspired by EA Sports FC UI.
+An interactive and stylish **Cristiano Ronaldo** quiz inspired by EA Sports FC UI.
 
 ---
 
 ## 🐐 About
 
-CR7 Mini Quiz is a fast and fun quiz about Cristiano Ronaldo featuring:
+CR7 Mini Quiz is a fast and fun quiz about **Cristiano Ronaldo** featuring:
 
 - 3 difficulty levels (Easy, Medium, Hard)
 - Gold “Special Card” design (EA Sports FC style)
@@ -38,7 +38,7 @@ CR7 Mini Quiz is a fast and fun quiz about Cristiano Ronaldo featuring:
 ---
 
 ## 👤 Author
-Jeremy-James Noivo
+**Jeremy-James Noivo**
 
 ---
 
