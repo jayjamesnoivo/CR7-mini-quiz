@@ -37,9 +37,15 @@ CR7 Mini Quiz is a fast and fun quiz about Cristiano Ronaldo featuring:
 
 ---
 
+## 👤 Author
+Jeremy-James Noivo
+
+---
+
 ## 📥 Installation
 
 Clone the project:
 
 ```bash
 git clone https://github.com/jayjamesnoivo/CR7-mini-quiz.git
+
